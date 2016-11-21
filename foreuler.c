@@ -10,7 +10,6 @@
  *
  *  foreuler.c
  * ---------------------------------------------------------------------------- */
-
 #include <stdio.h>
 #include <math.h>
 
@@ -19,7 +18,7 @@ typedef double (*deriv_f) (double, double);
 
 /* defines a term to print width and precision of output results
 * to a tabular format */
-#define FMT " %7.3f" i
+#define FMT " %7.3f"
 
 /* Define initial value problem (IVP) with Euler solution */
 void ivp_euler(deriv_f f, double y, int step, int end_t)
@@ -45,7 +44,7 @@ void analytic()
 	printf("\nAnalytic: ");
 
 	for (t = 0; t <= 100; t+= 10)
-		printf(FMT, 20 + 80 * exp(-0.07 * t);
+		printf(FMT, 20 + 80 * exp(-0.07 * t));
 	printf("\n");
 }
 
